@@ -9,7 +9,7 @@
 
     <groupId>com.ibm</groupId>
     <artifactId>hamcrest-querydsl</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>hamcrest-querydsl</name>

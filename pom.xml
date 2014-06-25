@@ -62,16 +62,16 @@
                     <target>1.7</target>
                 </configuration>
             </plugin>
-            <!-- <plugin> -->
-            <!--     <groupId>org.sonatype.plugins</groupId> -->
-            <!--     <artifactId>nexus-staging-maven-plugin</artifactId> -->
-            <!--     <version>1.6.2</version> -->
-            <!--     <extensions>true</extensions> -->
-            <!--     <configuration> -->
-            <!--         <serverId>local-nexus</serverId> -->
-            <!--         <nexusUrl>http://localhost:8081/nexus/</nexusUrl> -->
-            <!--     </configuration> -->
-            <!-- </plugin> -->
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.6.2</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>sonatype-nexus-staging</serverId>
+                    <nexusUrl>https://oss.sonatype.org/service/local/staging/deploy/maven2/</nexusUrl>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
@@ -108,18 +108,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <!-- <distributionManagement> -->
-    <!--     <repository> -->
-    <!--         <id>sonatype-nexus-staging</id> -->
-    <!--         <name>Nexus Staging Repository</name> -->
-    <!--         <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url> -->
-    <!--     </repository> -->
-    <!--     <snapshotRepository> -->
-    <!--         <id>sonatype-nexus-snapshots</id> -->
-    <!--         <name>Nexus Snapshot Repository</name> -->
-    <!--         <url>https://oss.sonatype.org/content/repositories/snapshots</url> -->
-    <!--     </snapshotRepository> -->
-    <!-- </distributionManagement> -->
 
 </project>

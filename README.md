@@ -12,6 +12,20 @@ the following matchers for query results are included:
 - `hasColumnContainingAny`
 
 
+## Installation
+
+Just add the following dependency to you `pom.xml`:
+
+```xml
+<dependency>
+    <groupId>com.ibm</groupId>
+    <artifactId>hamcrest-querydsl</artifactId>
+    <version>1.0</version>
+    <scope>test</scope>
+</dependency>
+```
+
+
 ## Usage
 
 To use the matchers, add the following static import to your test class:

@@ -14,7 +14,7 @@ the following matchers for query results are included:
 
 ## Installation
 
-Just add the following dependency to you `pom.xml`:
+Just add the following dependency to your `pom.xml`:
 
 ```xml
 <dependency>
